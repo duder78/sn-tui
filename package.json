@@ -1,0 +1,56 @@
+{
+  "name": "tui",
+  "version": "0.0.1",
+  "private": false,
+  "description": "",
+  "keywords": [
+    "ServiceNow",
+    "Now Experience UI Component",
+    "tui",
+    "Image Editor"
+  ],
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=14.18.1",
+    "npm": ">=5.3.0"
+  },
+  "module": "src/index.js",
+  "scripts": {
+    "postinstall": "npm install --save-dev react-error-overlay@6.0.9",
+    "dev": "snc ui-component develop",
+    "deploy": "snc ui-component deploy",
+    "deploy:force": "snc ui-component deploy --force"
+  },
+  "dependencies": {
+    "@servicenow/cli-archetype": "20.0.0",
+    "@servicenow/cli-component-archetype": "20.0.0",
+    "@servicenow/library-translate": "rome",
+    "@servicenow/now-alert": "^19.8.2-ecd",
+    "@servicenow/now-button": "^19.8.2-ecd",
+    "@servicenow/now-input": "^19.8.2-ecd",
+    "@servicenow/now-loader": "^19.8.2-ecd",
+    "@servicenow/now-modal": "^19.8.2-ecd",
+    "@servicenow/sass-kit": "rome",
+    "@servicenow/sass-theme": "rome",
+    "@servicenow/ui-core": "rome",
+    "@servicenow/ui-effect-http": "^19.4.2",
+    "@servicenow/ui-renderer-snabbdom": "rome",
+    "file-saver": "^2.0.5",
+    "tui-code-snippet": "^2.3.3",
+    "tui-color-picker": "^2.2.6",
+    "tui-image-editor": "^3.15.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@servicenow/cli-archetype-dev": "20.0.0",
+    "@servicenow/cli-component-archetype-dev": "20.0.0",
+    "babel-loader": "^8.2.5",
+    "react-error-overlay": "^6.0.9",
+    "typescript": "^4.7.4"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}

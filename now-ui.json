@@ -1,0 +1,51 @@
+{
+	"components": {
+	    "x-758728-tui": {
+	        "innerComponents": [
+				"now-button",
+				"now-loader",
+				"now-input",
+				"now-dropdown",
+				"now-alert"
+			],
+			"properties": [
+                {
+					"name": "theme",
+					"label": "Theme",
+					"description": "Choose a base theme",
+					"fieldType": "choice",
+					"readOnly": false,
+					"required": false,
+					"defaultValue": "default",
+					"typeMetadata": {
+						"variant": "dropdown",
+						"choices": [{ 
+							"label": "Default",
+							"value": "default"
+						},{
+							"label": "Blue",
+							"value": "blue"
+						},{
+							"label":"Green",
+							"value": "green"
+						},{
+							"label": "Fuschia",
+							"value": "fuschia"
+						},{
+							"label": "Black",
+							"value": "black"
+						}]
+					}
+                }
+			],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "TUI Image Editor",
+				"icon": "document-outline",
+				"description": "A full-featured image editor based on open-source TUI Image Editor.  Allows to load image from your device or the ServiceNow db_images table and theming via exposed component property.",
+				"category": "primitives"
+			}
+	    }
+	},
+	"scopeName": "x_758728_tui"
+}
